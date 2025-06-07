@@ -1,54 +1,41 @@
-# 🟢 Ad Allowlist
+# 🛠️ Custom Ad Allowlist
 
-> A privacy-conscious allowlist to support ethical and non-intrusive advertising on the open web.
+> A user-defined allowlist for ads you **choose** to see — because not all ads are bad, and some are just useful.
 
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)
-![Built With](https://img.shields.io/badge/Built%20With-Markdown-blue)
-
----
-
-## 🌟 Overview
-
-The **Ad Allowlist** is a curated list of ad domains that support:
-
-This project enables ad-blocking users to selectively support responsible ads without compromising their values or user experience.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Status](https://img.shields.io/badge/status-beta-yellow.svg)
+![Customizable](https://img.shields.io/badge/Customizable-Yes-brightgreen)
+![Privacy First](https://img.shields.io/badge/Privacy%20First-%F0%9F%94%91-blue)
 
 ---
 
-## 📋 Features
+## ✨ What Is This?
 
-- ✅ Curated and manually reviewed domain list
-- 🔍 Focus on non-tracking, contextual, and ethical ad networks
-- 💡 Easy integration with uBlock Origin, Pi-hole, AdGuard, etc.
-- 🛡️ Minimal impact on page load and privacy
+**Custom Ad Allowlist** is a personal and flexible allowlist of ad domains that *you trust*. Whether it's:
 
----
+- Ads for services you use
+- Ads from platforms you want to support
+- Or simply ads you find helpful
 
-## 📦 Supported Ad Networks (Examples)
-
-| Provider        | Type             | Notes                                     |
-|-----------------|------------------|-------------------------------------------|
-| Carbon Ads      | Contextual       | Clean, minimal, and privacy-respecting    |
-| EthicalAds      | Developer Focus  | Open source and GDPR-compliant            |
-| BuySellAds      | Banner/Text Ads  | Used by tech blogs and indie developers   |
-
-> 📝 Full list in [`allowlist.txt`](./allowlist.txt)
+This project gives you **control over what gets through** — not the ad networks, not the adblocker, just **you**.
 
 ---
 
-## 🚀 Getting Started
+## 🧩 Why Use It?
 
-### With uBlock Origin
+- 🧘 **User-controlled** — nothing gets in without your say
+- ⚡ **Faster web experience** — no clutter, only what you permit
+- 🧼 **Cleaner browsing** — say no to creepy tracking, yes to convenience
+- 🤝 **Support trusted sources** — allow helpful or friendly ads
 
-1. Go to **Dashboard > Filter Lists > Custom**.
-2. Paste the raw URL of `allowlist.txt`.
-3. Click **Apply Changes**.
+---
 
-### With Pi-hole
+## 📂 Example: `custom-allowlist.txt`
 
-1. Add the raw URL to your Pi-hole’s adlists.
-2. Update gravity:  
-   ```bash
-   pihole -g
+```txt
+# Example: Custom Ad Allowlist
+# Only add domains you trust!
+
+ads.trustedpartner.com
+cdn.partnernetwork.net
+promo.usefulapp.io
